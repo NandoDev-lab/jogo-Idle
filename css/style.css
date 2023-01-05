@@ -1,0 +1,99 @@
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: rgb(216, 216, 196);
+}
+.funcionario{
+    
+    width: 50px;
+    height: 50px;
+    background-color: yellow;    
+    margin-right: 0;
+    margin-top: 200px;
+    border-radius: 100px;
+    
+}
+
+.container-esquerdo{
+    width: 150px;
+    height: 1100px;
+    background-color: black;
+    margin-left: 0px;
+    z-index: -1;
+
+}
+.fundo{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    
+    
+}
+.encarregada{
+    width: 150px;
+    height: 150px;
+    background-color: brown;
+}
+.elevador{
+    width: 150px;
+    height: 155px;
+    background-color: gray;
+
+    margin-top: -150px;
+    z-index: -1;
+    animation-name: elevador;
+    animation-duration: 20s;
+    animation-iteration-count: infinite;
+  
+}
+.container-direito{
+    width: 300px;
+    height: 1100px;
+    margin-right: 0px;
+   background-color: black;
+}
+.caminhos{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    
+}
+.caminho-carregador{
+    display: flex; 
+    height: 150px; 
+}
+.carregador{
+    width: 50px;
+    height: 70px;
+    background-color: black;
+}
+.minerio{
+    width: 100%;
+    height: 100%;
+    background-color: rgb(219, 135, 7);
+} 
+.galpao{
+    height: 150px;
+    background-color: bisque;
+}
+
+@keyframes funcionarios {
+    0%{margin-right: 300px;}
+    50%{margin-right: 700px;}
+  
+}
+
+@keyframes elevador {
+    0%{margin-top: -150px;}
+    5%{margin-top: 20px;}
+    10%{margin-top:100px ;}
+    15%{margin-top: 200px;}
+    20%{margin-top: 300px;}
+    25%{margin-top: 400px;}
+    30%{margin-top: 500px;}
+    35%{margin-top: 600px;}
+    40%{margin-top: 700px;}
+    45%{margin-top: 800px;}
+
+}
